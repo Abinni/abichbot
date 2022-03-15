@@ -55,9 +55,9 @@ def get_response(message):
         Bot_Response(message, ['source', 'code', ],
                      'Here you Go\n /source_code'),
 
-        # Nude Joke Lol
+        # Joke
         Bot_Response(message, [
-                     'nude', 'nudes', ], 'joke beno ena pm ba'),
+                     'nude', 'nudes', ], 'joke beno ena pm ba 😌'),
 
         # When Querry
         Bot_Response(message, ['when', '?', 'query', 'question', 'inform',
