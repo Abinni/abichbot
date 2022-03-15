@@ -39,7 +39,7 @@ def get_response(message):
         Bot_Response(message, ['help', 'please'],
                      'I will do my best to assist you!'),
         # Website
-        Bot_Response(message, ['link', 'links', ], 'website https://rohan.ml'),
+        Bot_Response(message, ['link', 'links', ], 'https://linktr.ee/Zioi'),
 
         # Song
         Bot_Response(message, ['play', 'song', ],
