@@ -61,11 +61,11 @@ def get_response(message):
 
         # When Querry
         Bot_Response(message, ['when', '?', 'query', 'question', 'inform',
-                     'developer'], 'Inquire with the developer about this. @amrohan'),
+                     'developer'], 'Inquire with the developer about this. @az7ix'),
 
         # When Website
-        Bot_Response(message, ['website', 'amrohan', 'web', 'developer'],
-                     'https://www.rohan.ml'),
+        Bot_Response(message, ['website', 'az7i', 'web', 'developer'],
+                     'https://linktr.ee/Zioi'),
 
         # When Projects
         Bot_Response(message, ['projects', 'project', 'proj','pro','projec', 'proje'],
