@@ -57,7 +57,7 @@ def get_response(message):
 
         # Joke
         Bot_Response(message, [
-                     'nude', 'nudes', ], 'joke beno ena pm ba 😌'),
+                     'joke', 'jokes', ], 'joke beno ena pm ba 😌'),
 
         # When Querry
         Bot_Response(message, ['when', '?', 'query', 'question', 'inform',
