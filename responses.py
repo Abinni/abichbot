@@ -37,6 +37,9 @@ def get_response(message):
         
         Bot_Response(message, ['ara', 'poda', 'myr'],
                      'apo agane aalea 😦🥲 smile in pain 🥺!'),
+        
+        Bot_Response(message, ['place', 'vide', 'evdya'],
+                     'kanu thalu palu 😌🚶‍♂🙋‍♂️!'),
 
         # new
         Bot_Response(message, ['how', 'you', 'created'],
