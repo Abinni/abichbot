@@ -28,9 +28,13 @@ def get_response(message):
 
         Bot_Response(message, ['how', 'are', 'you'],
                      'I\'m fine thanks ☺!'),
-      
-        Bot_Response(message, ['eda', 'monea', 'oi'],
-                     'I\ ada para☺!'),
+     
+        Bot_Response(message, ['eda', 'monea', 'nemba'],
+                     'ada para☺!'),
+        
+        Bot_Response(message, ['i love you', 'love', 'like you'],
+                    'i love you to 🙊')
+        
         # new
         Bot_Response(message, ['how', 'you', 'created'],
                      'I was created by using python 🧑‍💻 github https://github.com/azin7'),
