@@ -1,95 +1,104 @@
-import re
+import os
+import logging
+import responses
+from telegram.ext import *
+from dotenv import load_dotenv
+
+# we use this to get api key from env files
+load_dotenv()
+API_KEY = os.getenv('API_KEY')
+
+# Set up the logging
+logging.basicConfig(
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+logging.info('Starting Bot...')
 
 
-def Bot_Response(message, response_array, response):
-    # Splits the message and the punctuation into an array
-    list_message = re.findall(r"[\w']+|[.,!?;]", message.lower())
-
-    # Scores the amount of words in the message
-    score = 0
-    for word in list_message:
-        if word in response_array:
-            score = score + 1
-
-    # Returns the response and the score of the response
-    # print(score, response)
-    return [score, response]
+# We defined this fuction to use as commands
+# all update.message are reply from bots to user
+def start(update, context):
+    update.message.reply_text(
+        'Hello there, I\'m a personal assistant bot of @azi7x 🧑‍💻😼.')
 
 
-def get_response(message):
-    # Add your custom responses here
-    response_list = [
-        Bot_Response(message, ['hello', 'hi', 'hey', 'sup'],
-                     'Hello there, my name is doc 🙂 '),
-
-        Bot_Response(message, ['bye', 'goodbye'], 'pokalea nemba 🥺!'),
-
-        Bot_Response(message, ['cmd', 'type cmd'], 'click me /list'),
-
-        Bot_Response(message, ['how', 'are', 'you'],
-                     'I\'m fine thanks ☺!'),
-        # new
-        Bot_Response(message, ['how', 'you', 'created'],
-                     'I was created by using python and got deployed on Herkou'),
-
-        # Name
-        Bot_Response(message, ['your', 'name'],
-                     'My name is doc\'s Bot, nice to meet you 🙂!'),
-        # Help
-        Bot_Response(message, ['help', 'please'],
-                     'I will do my best to assist you!'),
-        # Website
-        Bot_Response(message, ['link', 'links', ], 'website https://rohan.ml'),
-
-        # Song
-        Bot_Response(message, ['play', 'song', ],
-                     'https://youtu.be/edzt82nC45k'),
-
-        # Notes
-        Bot_Response(message, ['notes', 'note', ],
-                     'Soon, notes will be available'),
-
-        Bot_Response(message, ['socials', 'socials', ],
-                     'Here you Go\n /socials'),
-
-        Bot_Response(message, ['source', 'code', ],
-                     'Here you Go\n /source_code'),
-
-        # Nude Joke Lol
-        Bot_Response(message, [
-                     'nude', 'nudes', ], 'I just took a screenshot, and I\'m sending your photo to @amrohan right now, you lil horny ass😏'),
-
-        # When Querry
-        Bot_Response(message, ['when', '?', 'query', 'question', 'inform',
-                     'developer'], 'Inquire with the developer about this. @amrohan'),
-
-        # When Website
-        Bot_Response(message, ['website', 'amrohan', 'web', 'developer'],
-                     'https://www.rohan.ml'),
-
-        # When Projects
-        Bot_Response(message, ['projects', 'project', 'proj','pro','projec', 'proje'],
-                     'Here you Go\n /projects'),
-
-    ]
-
-    # Checks all of the response scores and returns the best matching response
-    response_scores = []
-    for response in response_list:
-        response_scores.append(response[0])
-
-    # Get the max value for the best response and store it into a variable
-    winning_response = max(response_scores)
-    matching_response = response_list[response_scores.index(winning_response)]
-
-    # Return the matching response to the user
-    if winning_response == 0:
-        bot_response = 'I didn\'t understand what you wrote.'
-    else:
-        bot_response = matching_response[1]
-
-    print('Bot response:', bot_response)
-    return bot_response
+def help(update, context):
+    update.message.reply_text('what can I do for you /cmd')
 
 
+def cmd(update, context):
+    update.message.reply_text('Availble Commands:\nFor notes- /notes\n ')
 
+
+def notes(update, context):
+    update.message.reply_text(
+        'Update soon 👋.')
+
+
+def list(update, context):
+    update.message.reply_text(
+        'All commands you can use\n /help : offcourse for help\n\n /notes: To get notes\n\n /projects : all projects soon')
+
+# there two methods to crete functions to get repond from bot this is 2nd one
+
+
+def socials(update, context):
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="List of Socails are down below:\n {Github} https://github.com/azin7\n\n {Email} moldmold123i1@gmail.com.ml")
+
+
+def source_code(update, context):
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="the source code can be accessed here\n {Github}\n https://github.com/azin7")
+
+
+def projects(update, context):
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="List of projects are down below:\n \n coming soon .ml")
+
+
+def handle_message(update, context):
+    text = str(update.message.text).lower()
+    logging.info(f'User ({update.message.chat.id}) says: {text}')
+
+    # Bot response
+    response = responses.get_response(text)
+    update.message.reply_text(response)
+
+
+def error(update, context):
+    # Logs errors
+    logging.error(f'Update {update} caused error {context.error}')
+
+
+# Run the programms from here
+if __name__ == '__main__':
+    updater = Updater(API_KEY, use_context=True)
+    dp = updater.dispatcher
+
+    # Commands handler which callback our commands when user ask for it
+    dp.add_handler(CommandHandler('start', start))
+
+    dp.add_handler(CommandHandler('help', help))
+
+    dp.add_handler(CommandHandler('cmd', cmd))
+
+    dp.add_handler(CommandHandler('notes', notes))
+
+    dp.add_handler(CommandHandler('list', list))
+
+    dp.add_handler(CommandHandler('socials', socials))
+
+    dp.add_handler(CommandHandler('source_code', source_code))
+
+    dp.add_handler(CommandHandler('projects', projects))
+
+    # Messages
+    dp.add_handler(MessageHandler(Filters.text, handle_message))
+
+    # Log all errors
+    dp.add_error_handler(error)
+
+    # Run the bot
+    updater.start_polling(1.0)
+    # Idle state give bot time to go in idle
+    updater.idle()
