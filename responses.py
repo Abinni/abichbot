@@ -35,6 +35,9 @@ def get_response(message):
         Bot_Response(message, ['love', 'secret', 'likeyou'],
                      'i love you☺!'),
         
+        Bot_Response(message, ['ara', 'poda', 'myr'],
+                     'apo agane aalea 😦🥲 smile in pain 🥺!'),
+
         # new
         Bot_Response(message, ['how', 'you', 'created'],
                      'I was created by using python 🧑‍💻 github https://github.com/azin7'),
