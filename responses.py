@@ -39,7 +39,7 @@ def get_response(message):
         Bot_Response(message, ['help', 'please'],
                      'I will do my best to assist you ☺!'),
         # Website
-        Bot_Response(message, ['link', 'links', ], 'https://linktr.ee/Zioi'),
+        Bot_Response(message, ['link', 'links', ], 'https://linktr.ee/azoiz'),
 
         # Song
         Bot_Response(message, ['play', 'song', ],
@@ -65,7 +65,7 @@ def get_response(message):
 
         # When Website
         Bot_Response(message, ['website', 'az7i', 'web', 'developer'],
-                     'https://linktr.ee/Zioi'),
+                     'https://linktr.ee/azoiz'),
 
         # When Projects
         Bot_Response(message, ['projects', 'project', 'proj','pro','projec', 'proje'],
