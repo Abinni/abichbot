@@ -24,20 +24,20 @@ def get_response(message):
 
         Bot_Response(message, ['bye', 'goodbye'], 'pokalea nemba 🥺!'),
 
-        Bot_Response(message, ['cmd', 'type cmd'], 'click me /list'),
+        Bot_Response(message, ['cmd', 'type cmd'], 'click here for more /list'),
 
         Bot_Response(message, ['how', 'are', 'you'],
                      'I\'m fine thanks ☺!'),
         # new
         Bot_Response(message, ['how', 'you', 'created'],
-                     'I was created by using python and got deployed on Herkou'),
+                     'I was created by using python github https://github.com/azin7'),
 
         # Name
         Bot_Response(message, ['your', 'name'],
                      'My name is doc\'s Bot, nice to meet you 🙂!'),
         # Help
         Bot_Response(message, ['help', 'please'],
-                     'I will do my best to assist you!'),
+                     'I will do my best to assist you ☺!'),
         # Website
         Bot_Response(message, ['link', 'links', ], 'https://linktr.ee/Zioi'),
 
