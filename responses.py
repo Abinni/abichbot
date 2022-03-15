@@ -19,7 +19,7 @@ def Bot_Response(message, response_array, response):
 def get_response(message):
     # Add your custom responses here
     response_list = [
-        Bot_Response(message, ['hello', 'hi', 'hey', 'sup'],
+        Bot_Response(message, ['hello', 'hi', 'hey', 'da'],
                      'Hello there, my name is doc 🙂 '),
 
         Bot_Response(message, ['bye', 'goodbye'], 'pokalea nemba 🥺!'),
@@ -30,7 +30,7 @@ def get_response(message):
                      'I\'m fine thanks ☺!'),
         # new
         Bot_Response(message, ['how', 'you', 'created'],
-                     'I was created by using python github https://github.com/azin7'),
+                     'I was created by using python 🧑‍💻 github https://github.com/azin7'),
 
         # Name
         Bot_Response(message, ['your', 'name'],
