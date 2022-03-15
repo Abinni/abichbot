@@ -33,7 +33,7 @@ def get_response(message):
                      'ada para☺!'),
         
         Bot_Response(message, ['i love you', 'love', 'like you'],
-                    'i love you to 🙊')
+                    'i love you to 🙊'),
         
         # new
         Bot_Response(message, ['how', 'you', 'created'],
