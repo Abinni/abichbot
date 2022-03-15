@@ -32,8 +32,8 @@ def get_response(message):
         Bot_Response(message, ['eda', 'monea', 'nemba'],
                      'ada para☺!'),
         
-        Bot_Response(message, ['i love you', 'love', 'like you'],
-                    'i love you to 🙊'),
+        Bot_Response(message, ['love', 'secret', 'likeyou'],
+                     'i love you☺!'),
         
         # new
         Bot_Response(message, ['how', 'you', 'created'],
