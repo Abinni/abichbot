@@ -57,13 +57,7 @@ def get_response(message):
 
         # Nude Joke Lol
         Bot_Response(message, [
-                     'nude', 'nudes', ], 'A theif in tintus house : he open the cupboad
-
-At that time tintu wake up : He ask who are u ?
-
-Theif : I am a theif ..... give me all ur precious things ....
-
-Tintu : there is nothing precious ..... When you going take my all books ..... if not ... i will callll every one you😏'),
+                     'nude', 'nudes', ], 'joke beno ena pm ba'),
 
         # When Querry
         Bot_Response(message, ['when', '?', 'query', 'question', 'inform',
