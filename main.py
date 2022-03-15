@@ -22,7 +22,7 @@ def start(update, context):
 
 
 def help(update, context):
-    update.message.reply_text('what can I do for you /cmd')
+    update.message.reply_text('what can I do for you👋 ')
 
 
 def cmd(update, context):
