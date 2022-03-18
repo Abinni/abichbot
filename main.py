@@ -33,7 +33,7 @@ def notes(update, context):
     update.message.reply_text(
         'Update soon 👋.')
 
-def az7i(update, context):
+def abiz(update, context):
     update.message.reply_text(
         'pm for 👋.')
 
