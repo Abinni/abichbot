@@ -22,7 +22,7 @@ def start(update, context):
 
 
 def help(update, context):
-    update.message.reply_text('what can I do for you👋 ')
+    update.message.reply_text('what can I do for you /cmd')
 
 
 def cmd(update, context):
@@ -36,7 +36,7 @@ def notes(update, context):
 
 def list(update, context):
     update.message.reply_text(
-        'All commands you can use\n /help : offcourse for help\n\n /notes: To get notes\n\n /az7i')
+        'All commands you can use\n /help : offcourse for help\n\n /notes: To get notes\n\n /projects : all projects soon')
 
 # there two methods to crete functions to get repond from bot this is 2nd one
 
@@ -49,6 +49,11 @@ def socials(update, context):
 def source_code(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="the source code can be accessed here\n {Github}\n https://github.com/azin7")
+
+
+def projects(update, context):
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="List of projects are down below:\n \n coming soon .ml")
 
 
 def handle_message(update, context):
