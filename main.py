@@ -50,7 +50,7 @@ def source_code(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="the source code can be accessed here\n {Github}\n https://github.com/azin7")
 
-def source_code(update, context):
+def az7i(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
                              az7i="pm for\n {Email} \n moldmold123i1@gmail.com
 
