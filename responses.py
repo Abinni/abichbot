@@ -80,7 +80,6 @@ def get_response(message):
         Bot_Response(message, ['website', 'az7i', 'web', 'developer'],
                      'https://linktr.ee/azoiz'),
 
-
     ]
 
     # Checks all of the response scores and returns the best matching response
