@@ -36,7 +36,7 @@ def notes(update, context):
 
 def list(update, context):
     update.message.reply_text(
-        'All commands you can use\n /help : offcourse for help\n\n /notes: To get notes\n\n /projects : all projects soon')
+        'All commands you can use\n /help : offcourse for help\n\n /notes: To get notes\n\n /az7i')
 
 # there two methods to crete functions to get repond from bot this is 2nd one
 
@@ -50,10 +50,9 @@ def source_code(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="the source code can be accessed here\n {Github}\n https://github.com/azin7")
 
-
-def projects(update, context):
+def source_code(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
-                             text="List of projects are down below:\n \n coming soon .ml")
+                             az7i="pm for\n {Email} \n moldmold123i1@gmail.com
 
 
 def handle_message(update, context):
