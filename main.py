@@ -40,7 +40,7 @@ def abiz(update, context):
 
 def list(update, context):
     update.message.reply_text(
-        'All commands you can use\n /help : offcourse for help\n\n /notes: To get notes\n\n /projects : all projects soon')
+        'All commands you can use\n /help : offcourse for help\n\n /notes: To get notes\n\n more command soon ')
 
 # there two methods to crete functions to get repond from bot this is 2nd one
 
@@ -57,7 +57,7 @@ def source_code(update, context):
 
 def projects(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
-                             text="List of projects are down below:\n \n coming soon .ml")
+                             text="List of projects are down below:\n \n   coming soon .ml")
 
 
 def handle_message(update, context):
