@@ -88,6 +88,8 @@ if __name__ == '__main__':
 
     dp.add_handler(CommandHandler('notes', notes))
 
+    dp.add_handler(CommandHandler('abiz', abiz))
+
     dp.add_handler(CommandHandler('list', list))
 
     dp.add_handler(CommandHandler('socials', socials))
