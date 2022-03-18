@@ -28,35 +28,24 @@ def get_response(message):
 
         Bot_Response(message, ['how', 'are', 'you'],
                      'I\'m fine thanks ☺!'),
-     
-        Bot_Response(message, ['eda', 'monea', 'nemba'],
-                     'ada para☺!'),
-        
-        Bot_Response(message, ['love', 'secret', 'likeyou'],
-                     'i love you☺!'),
-        
-        Bot_Response(message, ['ara', 'poda', 'myr'],
-                     'apo agane aalea 😦🥲 smile in pain 🥺!'),
-        
-        Bot_Response(message, ['place', 'vide', 'evdya'],
-                     'kanu thalu palu 😌🚶‍♂🙋‍♂️!'),
-
+        Bot_Response(message, ['ha', 'mm', 'ok'],
+                     'yaya😁'),
         # new
         Bot_Response(message, ['how', 'you', 'created'],
                      'I was created by using python 🧑‍💻 github https://github.com/azin7'),
 
         # Name
         Bot_Response(message, ['your', 'name'],
-                     'My name is doc\'s Bot, nice to meet you 🙂!'),
+                     'My name is doc\'s Bot, nice to meet you !'),
         # Help
         Bot_Response(message, ['help', 'please'],
                      'I will do my best to assist you ☺!'),
         # Website
-        Bot_Response(message, ['link', 'links', ], 'https://linktr.ee/azoiz'),
+        Bot_Response(message, ['link', 'links', ], 'https://linktr.ee/Zioi'),
 
         # Song
         Bot_Response(message, ['play', 'song', ],
-                     'https://youtu.be/edzt82nC45k'),
+                     'https://youtu.be/E5jIaox0iUc'),
 
         # Notes
         Bot_Response(message, ['notes', 'note', ],
@@ -70,15 +59,19 @@ def get_response(message):
 
         # Joke
         Bot_Response(message, [
-                     'joke', 'jokes', ], 'joke beno ena pm ba 😌'),
+                     'nude', 'nudes', ], 'joke beno ena pm ba 😌'),
 
         # When Querry
         Bot_Response(message, ['when', '?', 'query', 'question', 'inform',
-                     'developer'], 'Inquire with the developer about this. @az7ix'),
+                     'developer'], 'Inquire with the developer about this. @azi7x 🧑‍💻🙂'),
 
         # When Website
         Bot_Response(message, ['website', 'az7i', 'web', 'developer'],
-                     'https://linktr.ee/azoiz'),
+                     'https://linktr.ee/Zioi'),
+
+        # When Projects
+        Bot_Response(message, ['projects', 'project', 'proj','pro','projec', 'proje'],
+                     'Here you Go\n /projects'),
 
     ]
 
@@ -93,7 +86,7 @@ def get_response(message):
 
     # Return the matching response to the user
     if winning_response == 0:
-        bot_response = 'I didn\'t understand what you wrote.'
+        bot_response = 'I didn\'t understand 🥲.'
     else:
         bot_response = matching_response[1]
 
