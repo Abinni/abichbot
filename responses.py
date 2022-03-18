@@ -80,9 +80,6 @@ def get_response(message):
         Bot_Response(message, ['website', 'az7i', 'web', 'developer'],
                      'https://linktr.ee/azoiz'),
 
-        # When az7i
-        Bot_Response(message, ['azi', 'az7i', 'azi7','abi','nbia', 'az'],
-                     'Here you Go\n /az7i'),
 
     ]
 
