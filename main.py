@@ -18,7 +18,7 @@ logging.info('Starting Bot...')
 # all update.message are reply from bots to user
 def start(update, context):
     update.message.reply_text(
-        'Hello there, I\'m a personal assistant bot of @azi7x 🧑‍💻😼.')
+        'Hello there, I\'m a personal assistant bot of @azi7x 🧑‍💻😼/n https://telegra.ph/file/3a7a36e0af99c49fdaf27.jpg.')
 
 
 def help(update, context):
