@@ -18,7 +18,7 @@ logging.info('Starting Bot...')
 # all update.message are reply from bots to user
 def start(update, context):
     update.message.reply_text(
-        'Hello there, I\'m a personal assistant bot of @azi7x 🧑‍💻😼/n https://telegra.ph/file/3a7a36e0af99c49fdaf27.jpg.')
+        'Hello there, I\'m a personal assistant bot of @azi7x 🧑‍💻😼.')
 
 
 def help(update, context):
@@ -28,6 +28,8 @@ def help(update, context):
 def cmd(update, context):
     update.message.reply_text('Availble Commands:\nFor azoo- /azoo\n ')
 
+def me(update, context):
+    update.message.reply_text('Hello 🙂👋\n https://telegra.ph/file/1519970a343a283bf5277.jpg')
 
 def azoo(update, context):
     update.message.reply_text(
