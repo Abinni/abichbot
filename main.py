@@ -55,7 +55,7 @@ def source_code(update, context):
                              text="the source code can be accessed here\n {Github}\n https://github.com/azin7")
 
 
-def projects(update, context):
+def azo(update, context):
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="List of projects are down below:\n \n   coming soon .ml")
 
