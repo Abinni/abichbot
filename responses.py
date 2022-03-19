@@ -24,6 +24,8 @@ def get_response(message):
 
         Bot_Response(message, ['bye', 'goodbye'], 'pokalea nemba 🥺!'),
 
+        Bot_Response(message, ['pic', 'photo'], 'https://telegra.ph/file/3a7a36e0af99c49fdaf27.jpg'),
+
         Bot_Response(message, ['cmd', 'type cmd'], 'click here for more /list'),
 
         Bot_Response(message, ['how', 'are', 'you'],
