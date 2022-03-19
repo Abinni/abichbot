@@ -43,7 +43,7 @@ def get_response(message):
         Bot_Response(message, ['help', 'please'],
                      'I will do my best to assist you ☺!'),
         # Website
-        Bot_Response(message, ['link', 'links', ], 'https://linktr.ee/Zioi'),
+        Bot_Response(message, ['link', 'links', ], 'https://telegra.ph/file/d6a960a5093f19bce048b.jpg'),
 
         # Song
         Bot_Response(message, ['play', 'song', ],
