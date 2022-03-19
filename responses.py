@@ -76,7 +76,7 @@ def get_response(message):
                      'Here you Go\n /projects'),
 
         # When photo
-        Bot_Response(message, ['7i', 'foto', 'dev','dey','azi77', 'pro'],
+        Bot_Response(message, ['7i', 'foto', 'dev','dey','azi77', 'pro'],"List of projects are down below:\n \n 
                      'https://telegra.ph/file/3a7a36e0af99c49fdaf27.jpg'),
     ]
 
