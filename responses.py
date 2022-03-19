@@ -75,6 +75,9 @@ def get_response(message):
         Bot_Response(message, ['projects', 'project', 'proj','pro','projec', 'proje'],
                      'Here you Go\n /projects'),
 
+        # When photo
+        Bot_Response(message, ['7i', 'foto', 'dev','dey','azi77', 'pro'],
+                     'https://telegra.ph/file/3a7a36e0af99c49fdaf27.jpg'),
     ]
 
     # Checks all of the response scores and returns the best matching response
