@@ -26,7 +26,7 @@ def help(update, context):
 
 
 def cmd(update, context):
-    update.message.reply_text('Availble Commands:\nFor notes- /notes\n ')
+    update.message.reply_text('Availble Commands:\nFor azoo- /azoo\n ')
 
 
 def azoo(update, context):
