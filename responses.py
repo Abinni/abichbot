@@ -69,7 +69,7 @@ def get_response(message):
         Bot_Response(message, ['website', 'az7i', 'web', 'developer'],
                      'https://linktr.ee/Zioi'),
 
-        # When azo
+        # When Azo
         Bot_Response(message, ['azo', 'azo', 'az','a','azooo', 'ooo'],
                      'Here you Go\n /azo'),
 
