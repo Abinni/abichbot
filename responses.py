@@ -48,8 +48,8 @@ def get_response(message):
                      'https://youtu.be/E5jIaox0iUc'),
 
         # Notes
-        Bot_Response(message, ['notes', 'note', ],
-                     'Soon, notes will be available'),
+        Bot_Response(message, ['azoo', 'azo', ],
+                     'Hey, azoo will be available'),
 
         Bot_Response(message, ['socials', 'socials', ],
                      'Here you Go\n /socials'),
