@@ -84,6 +84,8 @@ if __name__ == '__main__':
 
     dp.add_handler(CommandHandler('cmd', cmd))
 
+    dp.add_handler(CommandHandler('me', me))
+
     dp.add_handler(CommandHandler('azoo', azoo))
 
     dp.add_handler(CommandHandler('list', list))
