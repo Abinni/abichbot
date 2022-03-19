@@ -29,7 +29,7 @@ def cmd(update, context):
     update.message.reply_text('Availble Commands:\nFor notes- /notes\n ')
 
 
-def notes(update, context):
+def azoo(update, context):
     update.message.reply_text(
         'Update soon 👋.')
 
@@ -82,7 +82,7 @@ if __name__ == '__main__':
 
     dp.add_handler(CommandHandler('cmd', cmd))
 
-    dp.add_handler(CommandHandler('notes', notes))
+    dp.add_handler(CommandHandler('azoo', azoo))
 
     dp.add_handler(CommandHandler('list', list))
 
