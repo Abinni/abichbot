@@ -36,7 +36,7 @@ def azoo(update, context):
 
 def list(update, context):
     update.message.reply_text(
-        'All commands you can use\n /help : offcourse for help\n\n /notes: To get notes\n\n /projects : all projects soon')
+        'All commands you can use\n /help : offcourse for help\n\n /azoo: To get azoo\n\n /projects : all projects soon')
 
 # there two methods to crete functions to get repond from bot this is 2nd one
 
